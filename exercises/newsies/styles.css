@@ -1,0 +1,58 @@
+body {
+    margin:0;
+}
+
+#classifieds {
+    width:33%;
+    display:inline-block;
+    float:left;
+}
+
+main {
+    width:90%;
+    margin:0 auto 0 auto;
+}
+
+#story {
+    width:63%;
+    display:inline-block;
+    float:right;
+    text-align: justify;
+}
+
+#classifieds span {
+    display:block;
+    border:3px dashed black;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#classifieds span:hover {
+    border:3px solid black;
+}
+
+#classifieds h3 {
+    text-transform: uppercase;
+}
+
+#classifieds span img {
+    width:100%;
+    height:auto;
+    padding:0;
+}
+
+header {
+    padding:25px 0 25px 0;
+    background:#f1f1f1;
+    margin-bottom:20px;
+    font-size:2em;
+}
+
+header h1 {
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.alert {
+    color:red;
+}
