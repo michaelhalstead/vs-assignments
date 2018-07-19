@@ -4,7 +4,6 @@ body {
 
 #classifieds {
     width:33%;
-    display:inline-block;
     float:left;
 }
 
@@ -15,7 +14,6 @@ main {
 
 #story {
     width:63%;
-    display:inline-block;
     float:right;
     text-align: justify;
 }
