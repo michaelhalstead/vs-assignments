@@ -46,9 +46,10 @@ header {
     font-size:2em;
 }
 
-header h1 {
-    text-align:center;
-    text-transform: uppercase;
+header img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .alert {
