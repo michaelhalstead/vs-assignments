@@ -1,18 +1,16 @@
-var names = [
-    {
-        firstName: "John",
-        lastName: "Wayne",
-        age: 67,
-        email: "hesdead@noemail.com"
+var person = {
+    name: "Rick",
+    occupation: "mad scientist",
+    catchPhrase: "Lubba dubba dub dub",
+    age: 70,
+    getOlder: function(){
+        this.age++
     },
-    {
-        firstName: "Jennifer",
-        lastName: "Lawrence",
-        age: 26,
-        email: "sexyjen@gmail.com"
-    },
-];
-
-for (var i = 0; i < names.length; i++) {
-    console.log(names[i].firstName)
+    print: function(){
+        console.log(this.name + "'s catchphrase is " + this.catchPhrase + "! His age is " + this.age)
+    }
 }
+
+console.log(person.age)
+person.getOlder()
+person.print()
