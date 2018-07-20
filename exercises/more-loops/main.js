@@ -22,3 +22,8 @@ function Person(name, age, gender) {
     this.age = age;
     this.gender = gender;
 }
+
+var rick = new Person('Rick', 70, 'male');
+var audrey = new Person('Audrey', 57, 'female');
+
+console.log(rick, audrey)
