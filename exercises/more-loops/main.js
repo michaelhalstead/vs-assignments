@@ -14,3 +14,11 @@ var person = {
 console.log(person.age)
 person.getOlder()
 person.print()
+
+//C onstructor function
+
+function Person(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+}
