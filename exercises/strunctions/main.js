@@ -12,7 +12,7 @@ function youSuck(){
     let newFirst = firstName.replace(firstName,"Tony");
     let newLast = lastName.replace(lastName,"Stark");
     let newSupername = superheroName.replace(superheroName,"Iron Man");
-    let spellItOut = newFirst.concat(newLast).split('');
+    let spellItOut = newFirst.concat(newLast).split('').join('-');
     console.log('What kind of name is ' + firstName + ' ' + lastName + '? A stupid one. Let\'s respell that \'' + spellItOut + '\'.')
     console.log('You might as well spell ' + superheroName.toLowerCase() + ' with a little \'b\'!')
     console.log('There\'s a reason they write \'' + newSupername.toUpperCase() + '\' in all caps -- it\'s just that awesome.') 

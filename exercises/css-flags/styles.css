@@ -1,0 +1,148 @@
+body {
+	background:#dddddd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+	width:90%;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.flag {
+   width: 500px;
+   position:relative;
+   margin: 20px auto;
+}
+
+.threeFive {
+    height:300px;
+}
+
+.full {
+	height:500px;
+}
+
+.twoThirds {
+	width:66.6%;
+}
+
+.third {
+	display:inline-block;
+	width:33.3%;
+    padding-top:60%;
+}
+
+
+.thirdTop {
+	display:block;
+    margin:0;
+    height:100px;
+}
+
+.halfTop {
+	display:block;
+    padding-top:45%;
+}
+
+.circle {
+	border-radius:50%;
+    width:200px;
+    height:200px;
+    max-height:90%;
+    display:inline-block;
+    margin: 0 auto;
+}
+
+.blue {
+	background:blue;
+}
+
+.white {
+	background:white;
+}
+
+.red {
+	background:red;
+}
+
+.black {
+	background:black;
+}
+
+.swedBlue {background:#276AA2;}
+
+.yellow {
+	background:yellow;
+}
+
+.gambiaRed {
+    background:#BF2D2F;
+}
+
+.gambiaBlue {
+    background: #082186;
+}
+
+.gambiaGreen {
+    background:#497533;
+}
+
+.borderTwenty {
+    border-top:20px white solid;
+    border-bottom:20px white solid;
+}
+
+.green {
+	background:darkgreen;
+}
+
+.right {
+	float:right;
+}
+
+.left {
+	float:left;
+}
+
+.fifty {
+	padding-top:100%;
+}
+
+.swiss {
+  background: white;
+  height: 300px;
+  position: relative;
+  width: 100px;
+  top:20%;
+  margin:0 auto;
+}
+.swiss:after {
+  background: white;
+  content: "";
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  margin-left:-100px;
+}
+
+.swedish {
+  background: #F8CD46;
+  height: 300px;
+  position: relative;
+  width: 60px;
+  margin-left:30%;
+}
+.swedish:after {
+  background: #F8CD46;
+  content: "";
+  height: 60px;
+  position: absolute;
+  top: 120px;
+  width: 500px;
+  margin-left:-150px;
+}
