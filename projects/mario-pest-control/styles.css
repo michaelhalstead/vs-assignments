@@ -1,0 +1,178 @@
+body {
+    background: url('img/bg.jpg') no-repeat center bottom;
+    font-family: monospace;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: url('img/logo.png') no-repeat;
+    background-size: 100%;
+    max-width: 600px;
+    width:80%;
+    height: 110px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+header p {
+    display: none;
+}
+
+header * {
+    display: inline-block;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding:10px;
+}
+
+p,
+h2 {
+    margin: 0;
+}
+
+.baddie {
+    height: 100px;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.baddie:not(:first-child):not(:last-child) {
+    margin: 80px auto;
+}
+
+.baddie input {
+    display:inline-block;
+}
+
+.baddie input[type="button"] {
+    border:none;
+    background:#43B047;
+    color:#fff;
+    padding:6px 10px;
+    line-height:20px;
+    height:28px;
+}
+
+.baddie input[type='button']:hover {
+    background:#FBD000;
+    cursor:pointer;
+}
+
+.baddie input[type="number"] {
+    border:none;
+    background:rgb(232, 250, 255);
+    color:#000;
+    text-align:center;
+    padding:5px 10px;
+    font-size:16px;
+    width:100px;
+}
+
+.baddie div:first-of-type {
+    padding-top:60px;
+    height:70px;
+}
+
+.baddie div:nth-child(2) {
+    margin-top:40px;
+    font-size: 0;
+    text-align:center;
+}
+
+.baddie:first-child div:first-child {
+    background: url('img/goomba.png') no-repeat top center;
+    background-size: 50px;
+   
+}
+
+.baddie:nth-child(2) div:first-child {
+    background: url('img/cheep-cheep.png') no-repeat top center;
+    background-size: 60px;
+}
+
+.baddie:nth-child(3) div:first-child {
+    background: url('img/bob-omb.png') no-repeat top center;
+    background-size: 60px;
+}
+
+.baddie div {
+    display: block;
+}
+
+#coins {
+    background: url('img/coin.png') no-repeat top left;
+    background-size: 20px 25px;
+    height: 60px;
+    display: inline-block;
+    padding: 0 0 0 35px;
+    margin: calc(0.2*100%) auto;
+}
+
+footer {
+    margin-top:calc(36vh - 20px);
+    display:block;
+    text-align:center;
+}
+
+footer p {
+    padding:5px;
+    background: #E52521;
+    color:white;
+    width:90%;
+    border-radius:10px;
+    margin:0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    .baddie {
+        max-width: 100%;
+    }
+
+    .baddie div:nth-child(1) {
+        float: left;
+    }
+    .baddie div:nth-child(2) {
+        float: right;
+        margin-top:30px
+    }
+
+    .baddie:first-child div:first-child,
+    .baddie:nth-child(2) div:first-child,
+    .baddie:nth-child(3) div:first-child {
+        background-position: top left;
+        text-align:left;
+    }
+
+    .baddie:not(:first-child):not(:last-child) {
+        margin: 40px 0;
+    }
+
+    main {
+        margin:80px auto;
+    }
+
+    footer p {
+        width:50%;
+    }
+}

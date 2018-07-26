@@ -1,0 +1,10 @@
+body {
+    background:#111111;
+}
+
+div#square {
+    background:#cccccc;
+    width:350px;
+    height:350px;
+    margin: 18% auto;
+}

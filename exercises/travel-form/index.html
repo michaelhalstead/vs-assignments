@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Rich People Travel</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body>
+    <header>
+        <h1>Rich People Travel</h1>
+    </header>
+    <section class='card'>
+            <form>
+
+                    <h4>First Name</h4>
+                    <br><input type='text' name='first' id=''>
+                    <br>
+                    <br>
+                    <h4>Last Name</h4><br>
+                    <input type='text' name='last' id=''>
+                    <br>
+                    <br>
+                    <div>
+                        <h4>Gender</h4><br>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <br><br>
+                    <div>
+                            <h4>Travel Location</h4><br>
+                            <select name='location'>
+                                <option value='Maui'>Maui</option>
+                                <option value='Rome'>Rome</option>
+                                <option value='Barcelona'>Barcelona</option>
+                                <option value='Dublin'>Dublin</option>
+                                <option value='Bangkok'>Bangkok</option>
+                            </select>
+                    </div>
+
+                    <br><br>
+                    <div>
+                            <h4>Dietary Restrictions</h4><br>
+                            <input type="checkbox" name="diet" id="veg" value="vegetarian">
+                            <label for="veg">Vegetarian</label>
+                            <br>
+                            <input type="checkbox" name="diet" id="kos" value="kosher">
+                            <label for="kos">Kosher</label>
+                            <br>
+                            <input type="checkbox" name="diet" id="lac" value="lactose free">
+                            <label for="lac">Lactose Free</label>
+                            <br>
+                            <input type="checkbox" name="diet" id="air" value="inhalable foods">
+                            <label for="air">Inhalable foods</label>
+                    </div>
+                    
+                    <br>
+                    <br>
+            
+            
+                    <input type='button' id='submitBtn' value="Submit">
+                    </form>
+                </section>
+    <script src='app.js'></script>
+</body>
+
+</html>

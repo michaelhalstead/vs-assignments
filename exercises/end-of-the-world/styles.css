@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+@font-face{
+    font-family:'clock';
+    src: url('clock.ttf');
+   }
+
+body {
+    background:url('bg.jpg') top center fixed no-repeat;
+    font-family: 'clock';
+    color:lightgray;
+}
+
+.hider {
+    color:darkred;
+}
+
+#timer {
+    margin:0;
+    font-size:140px;
+}
+
+#timerWrapper {
+    background:black;
+    padding:30px;
+    max-width:525px;
+    height:110px;
+    margin:20% auto;
+    border:2px solid slategrey;
+    text-align:center;
+}
