@@ -1,10 +1,8 @@
 document.getElementById('submitBtn').addEventListener('click', function(){
-    var checkboxes = document.getElementsByName('diet');
-    var diet = [];
+    let checkboxes = document.getElementsByName('diet');
+    let diet = [];
     for (var i=0; i<checkboxes.length; i++) {
-       if (checkboxes[i].checked) {
-          diet.push(checkboxes[i].value);
-       }
+       (checkboxes[i].checked) ? diet.push(checkboxes[i].value) : null
     }
     let fn = document.querySelector('input[name=\'first\']').value;
     let ln = document.querySelector('input[name=\'last\']').value;
