@@ -28,7 +28,7 @@
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Past Shows</a>
+            <a href="/portfolio/">Past Shows</a>
           </li>
           <li>
             <a href="#">Friends</a>
@@ -50,7 +50,7 @@
         <a href="#">About</a>
       </li>
       <li>
-        <a href="#">Past Shows</a>
+        <a href="/portfolio/">Past Shows</a>
       </li>
       <li>
         <a href="#">Friends</a>
@@ -61,31 +61,48 @@
     </ul>
   </header>
 
-  <div class="section fullHeight">
+  <div class="section fullHeight" style='display:flex;'>
     <div class="container">
-      <br>
-      <br>
       <h1 class="header center white-text">MAKE SOME NOISE.</h1>
       <div class="row center">
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light purple">Get Started</a>
       </div>
-      <br>
-      <br>
-
     </div>
   </div>
-
-  <div class="container white-text index-footer">
-    ©2018
-    <a class="white-text" href="http://www.beanbrigade.com">Beanie Brigade | Website by
-      <a href="https://www.redmanedigital.com/?source=beanie-brigade" target="_blank">Redmane Digital</a>
+  <div class="section white">
+    <div class="carousel carousel-slider">
+        <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2">button</a>
+          </div>
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+      </div>
   </div>
 
+  <footer class="page-footer purple">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Beanie Brigade
+        <a class="grey-text text-lighten-4 right" href="https://www.redmanedigital.com/?source=beanie-brigade">Site by Redmane Digital</a>
+      </div>
+    </div>
+  </footer>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
+    });
+
+  </script>
 
 </body>
 

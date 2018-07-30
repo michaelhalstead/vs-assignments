@@ -251,9 +251,10 @@ $navbar-font-color: #9d9d9d !default;
 $navbar-font-color-hover: #595972 !default;
 $navbar-font-color-active: #3c3c5f !default;
 $navbar-brand-font-size: 2.1rem !default;
-$navbar-brand-logo-height: 80px !default;
-$navbar-brand-logo-padding: 20px 0 0 0 !default;
-
+$navbar-brand-logo-height: 50px !default;
+$navbar-brand-logo-padding: 10px 0 0 0 !default;
+$navbar-brand-logo-height-lg: 80px !default;
+$navbar-brand-logo-padding-lg: 20px 0 0 0 !default;
 // 14. Side Navigation
 // ==========================================================================
 
@@ -358,6 +359,10 @@ $progress-bar-color: $secondary-color !default;
 
 $index-banner-height: 100vh !default;
 $index-banner-bg: linear-gradient(
-    rgba(89, 51, 164, 0.45), 
-    rgba(145, 35, 167, 0.45)
-  ), url('../assets/img/hero.jpg');
+    rgba(89, 51, 164, 0.75), 
+    rgba(145, 35, 167, 0.75)
+  ), url('../assets/img/hero.jpg') fixed;
+$purpleGrad: linear-gradient(
+  rgba(89, 51, 164, 0.8), 
+  rgba(145, 35, 167, 0.8)
+) fixed;

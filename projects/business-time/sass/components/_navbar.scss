@@ -205,4 +205,11 @@ nav {
   .navbar-fixed {
     height: $navbar-height;
   }
+   // Logo 
+   .brand-logo {
+    img {
+      height:$navbar-brand-logo-height-lg !important;
+      padding:$navbar-brand-logo-padding-lg !important;
+    }
+  }
 }

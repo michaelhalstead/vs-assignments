@@ -142,6 +142,10 @@
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
 
+    &.portfolio {
+      padding:6px;
+    }
+
     p {
       margin: 0;
     }
