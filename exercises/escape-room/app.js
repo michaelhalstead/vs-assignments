@@ -26,7 +26,7 @@ let where = (a,b) => a + ',' + b;
     starting position is (1,1). door is (2,1). hole is (0,0). key is (2,2).
 */
 
-console.log('\n\nWelcome, ' + name + '.\n\nYou are in a locked room by yourself. To your right is a door. In order to escape, you must find the key.')
+console.log(`\n\nWelcome, ${name}.\n\nYou are in a locked room by yourself. To your right is a door. In order to escape, you must find the key.`)
 console.log('\n\nChoose from the following commands:\n1. up\n2. down\n3. left\n4. right\n5. open door\n6. inspect\n\n')
 
 let playGame = function(what,hole) {
@@ -103,7 +103,7 @@ while (alive) {
 }
 
 if (won) {
-    console.log('Congratulations, ' + name + '! You escaped the room!')
+    console.log(`Congratulations, ${name}! You escaped the room!`)
 } else {
     console.log('Game Over')
 }

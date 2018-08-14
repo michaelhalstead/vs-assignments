@@ -1,0 +1,62 @@
+{
+	"appetizers": [
+		{
+            	"item": "French Fries",
+			"ingredients": ["potatoes", "peanut oil"],
+			"description": "Delicious house-made fries, double-fried for a crunchy fry with a deliciously smooth interior."
+		},
+		{
+            	"item": "Cheesy Cauliflower Breadsticks",
+			"ingredients": ["cauliflower", "garlic", "italian seasoning", "crushed red pepper flakes", "eggs", "cheddar cheese", "parmasean cheese", "salt", "papper"],
+			"description": "Gluten-free breadsticks made from the finest ingredients. A cauliflower base is used for the bread, keeping you healthy and satisfied."
+		}
+    ],
+    "cold sandwiches": [
+		{
+            	"item": "Classic BLT",
+			"ingredients": ["sourdough bread", "bacon", "lettuce", "tomato", "mayonaise"],
+			"description": "A traditional BLT sandwich with thick-cut peppered bacon, home-grown lettuce and tomatoes, and house-made mayonaise."
+		},
+		{
+            	"item": "Roast Beef Deluxe",
+			"ingredients":["dill rye bread", "roast beef", "ajou dressing", "swiss cheese", "tomato", "spinach"],
+			"description": "Move over, Arbys. The Roast Beef Deluxe brings you the very best beef around, on artisan dill rye bread, and topped with Swiss Cheee, tomatoes, spinach, and ajou dressing to top it off."
+		}
+    ],
+    "hot sandwhiches": [
+		{
+			"item": "Meat Lovers Pizza Sandwich",
+			"ingredients":["sourdough bread", "pepperoni", "salami", "ham", "mozzarella cheese", "parmasean cheese", "pizza sauce"],
+			"description": "The best parts of a meat lovers pizza meat the combined with the deliciousness of a sub sandwhich. A sourdough 'crust', pepperoni, salami, ham, mozzarella, paramsean, and pizza sauce create a flavor explosion too good to pass up."
+		},
+		{
+			"item": "Baked Deluxe",
+			"ingredients":["dill rye bread", "ham", "turkey", "swiss cheese", "spinach", "olive oil", "balsamic vinegar"],
+			"description": "Dill rye brad with ham, turkey, swiss cheee, spinach and a balsamic oil finish. A sure crowd-pleaser."
+		}
+    ],
+    "desserts": [
+		{
+            	"item": "Hot Fudge Sundae",
+			"ingredients": ["vanilla bean ice cream", "peanuts", "hot fudge", "whipped cream", "maraschino cherries"],
+			"description": "A traditiona hot fudge sundae made with love from the finest ingredients."
+		},
+		{
+			"item": "Coconut Cream Pie",
+			"ingredients": ["graham cracker crust", "whipped cream", "toasted coconut", "coconut cream"],
+			"description": "House-made coconut creme in a delicous graham-cracker crust. One bite and you'll be in love."
+		}
+    ],
+    "drinks": [
+		{
+            	"item": "Long Island Ice Tea",
+			"ingredients": ["gin", "white rum", "silver tequila", "vodka", "triple sec", "simple syrup", "lemon juice", "cola"],
+			"description": "Tea is overrated - replace those boring herbs with liquor, liquor, and a little liquor to top it off."
+		},
+		{
+			"item": "Russian Sprite",
+			"ingredients": ["vodka", "lime juice", "lemon juice", "tonic water"],
+			"description": "All the crisp refreshing accents of Sprite, mixed with the sweet nector of potatoes. It's fruits and vegetables, so it's good for you. Trust us, we're professionals."
+		}
+	]
+}

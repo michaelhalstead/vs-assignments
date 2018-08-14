@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Get Shit Done.</title>
+    <link rel='stylesheet' href='assets/semantic.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body onload="login()">
+    <div class="ui container" style="display:flex;flex-direction:column;align-items:center;">
+        <img src='/assets/img/getpoopdone.png' id='logo' />
+    </div>
+    <div class="ui basic modal mini">
+        <div class="ui icon header">
+            <i class="user circle icon"></i>
+            Enter Username
+        </div>
+        <div class="content">
+            <div class="ui action input onehunnit">
+                <input placeholder="User..." type="text" id="user">
+            </div>
+
+        </div>
+        <div class="actions login">
+            <div class="ui green ok inverted button" onclick="startGet()" id="getData">
+                <i class="checkmark icon"></i>
+                Login
+            </div>
+        </div>
+    </div>
+
+    <section class="ui container userTask">
+        <button class="ui labeled icon button" onclick="login('change')">
+            <i class="user outline icon"></i>
+            Change User
+        </button>
+        <button class="ui right labeled icon button" onclick="createTask()">
+            <i class="tasks icon"></i>
+            New Task
+        </button>
+    </section>
+
+    <section class="small-centered">
+        <div class="ui link cards container" id="taskList">
+        </div>
+    </section>
+    <div class="ui tiny modal transition" id="deleteTask">
+        <div class="header">
+            <i class="archive icon"></i> Delete Todo
+        </div>
+        <div class="content">
+            <p>Are you sure you want to remove this task?</p>
+        </div>
+        <div class="actions">
+            <div class="ui negative button">
+                No
+            </div>
+            <div class="ui positive labeled icon button">
+                Yes
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
+    <div class="ui tiny modal transition" id="editTask">
+        <div class="header">
+            <i class="pencil icon"></i> Modify Task
+        </div>
+        <div class="content">
+            <div class="ui form" id='editForm'>
+                <div class="required field">
+                    <label>Title</label>
+                    <input type="text" id="title" oninput="pushChange(this)">
+                </div>
+                <div class="field">
+                    <label>Image URL</label>
+                    <input type="text" id="imgUrl" oninput="pushChange(this)">
+                </div>
+                <div class="field">
+                    <label>Price</label>
+                    <input type="number" pattern="[0-9]+" id="price" oninput="pushChange(this)">
+                </div>
+                <div class="field">
+                    <label>Description</label>
+                    <input type="text" id="description" oninput="pushChange(this)">
+                </div>
+                <div class="ui toggle checkbox" id='completeWrap'>
+                    <input name="newsletter" type="checkbox" id="completed" onchange="pushChange(this)">
+                    <label>Completed</label>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui negative button">
+                Cancel
+            </div>
+            <div class="ui positive right labeled icon button">
+                Update
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/assets/semantic.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/assets/app.js"></script>
+
+</html>

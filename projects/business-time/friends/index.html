@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Beanie Brigade || MAKE SOME NOISE.</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+        <link rel='icon' href='../assets/img/favicon2.png' type='image/png' />
+</head>
+
+<body class="friends">
+
+        <header>
+                <nav class="white navbar-fixed" role="navigation">
+                    <div class="nav-wrapper container">
+                        <a id="logo-container" href="#" class="brand-logo" alt='Beanie Brigade'>
+                            <img src='../assets/img/logo.png'>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="../#">Home</a>
+                            </li>
+                            <li>
+                                <a href="../portfolio/">Collabs</a>
+                            </li>
+                            <li>
+                                <a href="../friends/">Friends</a>
+                            </li>
+                            <li>
+                                <a href="../contact/">Contact</a>
+                            </li>
+                        </ul>
+                        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+                </nav>
+                <ul id="nav-mobile" class="sidenav">
+                    <li>
+                        <a href="../#">Home</a>
+                    </li>
+                    <li>
+                        <a href="../portfolio/">Collabs</a>
+                    </li>
+                    <li>
+                        <a href="../friends/">Friends</a>
+                    </li>
+                    <li>
+                        <a href="../contact/">Contact</a>
+                    </li>
+                </ul>
+            </header>
+    <main>
+        <div class="section padTop150" style='min-height:50vh;opacity:1;' id='review-body'>
+            <div class='container white-text' style="display:flex;flex-direction: column;">
+                <i class="fas fa-quote-left" style="font-size:1.5em;"></i>
+                <h5 style="padding:0 25px;text-align: justify" id='review-text'></h5>
+                <p style="text-align:right;padding-right:35px;" id='reviewer-name'></p>
+                <i class="fas fa-quote-right" style="font-size:1.5em; align-self:flex-end"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer transparent">
+        <div class="footer-copyright transparent">
+            <div class="container">
+                © 2018 Beanie Brigade
+                <a class="grey-text text-lighten-4 right" href="https://www.redmanedigital.com/?source=beanie-brigade">Site by Redmane Digital</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
+    <script>
+        let reviews = [
+            {
+                text: "There hasn't been a single promoter or talent buyer who has treated us better than Beanie Brigade. From booking the show to getting us details and actually running the show, there isn't a single person I'd rather work with over Beanie Brigade.",
+                name: "STEPH COLBERTSON (SHORT STORIES)",
+            },
+            {
+                text: "Beanie Brigade has never failed at delivering quality hospitality every time we, or any other artist, have worked with them. It's no miracle either, as the people behind Beanie Brigade are nothing short of genuine, caring, and honest people who want nothing less for the music scene than to see it thrive. I rarely have seen a single booking company bring so many things to the table so quickly. Beanie Brigade has a solid draw and never leaves their bands hungry or broke when they leave the venue and continuously promotes every show until their fingers bleed. The blood, sweat, and tears Beanie Brigade has put into their work is unfathomable, making them an amazing group of people to work with. In the time Beanie Brigade has been active, they have consistently delivered quality shows to the residents of the Rogue Valley and beyond. It is so important to our music scene and our community to have something as special and committed as Beanie Brigade to making sure quality art is heard and remembered.",
+                name: "PRESTON MONTGOMERY (SOURCE OF ALL SORROWS)",
+            },
+            {
+                text: "After a week on tour and playing some really small shows I didn't know what to expect knowing we were going to play a show in Grants Pass (a town I had never heard of). But from the moment we reached the venue I knew that this show was going to be something special. As a small band a lot of shows we play the promoters usually provide us with the bare minimum, however Beanie Brigade exceeded any expectation I had of the Southern Oregon music scene. From start to finish we had a blast not only playing, but getting to know the scene. It is a really special feeling knowing that you're cared for, especially hundreds of miles from home and I have never felt that as much as I did at the Eaden Ballroom. Because of this our show in Grants Pass was a highlight of tour. I have nothing but good things to say about Beanie Brigade and I hope to play there again soon.",
+                name: "GRANT SANCHEZ (CREEKSIDE)",
+            },
+            {
+                text: "Beanie Brigade is one of the few music promotion groups that I feel like I can really depend on. Our first show with them was after a couple cancellations on our first real tour, so we were grateful to even have a venue to play in the first place. Not only did the BB team have a professional sound crew and great street promotion, they fed every band that performed that night. The show we played had the best turnout and crowd of our tour! We were all stoked when Kevin asked us back for another show last month.",
+                name: "DAVID HOLLENBECK (CITYSICK)",
+            },
+            {
+                text: "For those of us that love music to death, we find some way to make it a part of our lives. For me, and many others, we start bands and start littering pieces of our hearts on stages. For others, they make sure people like me can keep leaving their hearts around. Beanie Brigade was formed by music lovers, for music lovers, and they're making sure Southern Oregon bands and music appreciators get to experience something wonderful.",
+                name: "CHRISTIAN BROWN (SOJOURNER)",
+            },
+            {
+                text: "Beanie Brigade is one of the best and most professional companies I have ever booked a show through. On top of that, they fed us, gave us a great show, and offered us a place to sleep. You couldn't ask for anything more than that after being on the road for a couple months.",
+                name: "CHAD NUNNALLY (SOMETHING MORE)",
+            }
+        ];
+        let theBody = document.getElementById('review-body');
+        let theText = document.getElementById('review-text');
+        let theName = document.getElementById('reviewer-name');
+        let what = 0;
+        theText.innerHTML = reviews[what].text;
+        theName.innerHTML = reviews[what].name;
+        setInterval(function () {
+            if (reviews.length === what - 1) {
+                what = 0;
+                theText.innerHTML = reviews[what].text;
+                theName.innerHTML = reviews[what].name;
+            } else {
+                what++;
+                theText.innerHTML = reviews[what].text;
+                theName.innerHTML = reviews[what].name;
+            } 
+        }, 6000);
+        $(document).ready(function () {
+      $('.carousel').carousel({
+      });
+
+      setInterval(function () {
+        $('.carousel').carousel('next');
+      }, 4500);
+
+    });
+    </script>
+
+</body>
+
+</html>

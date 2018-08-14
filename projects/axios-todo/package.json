@@ -1,0 +1,16 @@
+{
+  "name": "axios-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Untitled-1.js",
+  "dependencies": {
+    "semantic-ui": "^2.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

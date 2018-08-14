@@ -1,0 +1,83 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fceabb; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fceabb, #f8b500); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fceabb, #f8b500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+
+.wrap {
+    background: #555555;
+    border:2px solid black;
+    width:400px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    padding:5px;
+    border-radius:10px;
+}
+
+.square {
+    flex-basis: 180px;
+    height:180px;
+    margin:5px;
+    border:1px solid white;
+    text-align:center;
+    transition:all .75s ease-in-out;
+    border-radius:20%;
+    background:#dddddd;
+}
+
+.square:hover {
+    border-radius:50%;
+    font-size:30px;
+}
+
+.square p {
+    margin-top:45%;
+}
+
+.square:nth-child(1):hover {
+    background:darkred;
+    color:white;
+}
+
+.square:nth-child(2):hover {
+    opacity:.5;
+    border:3px solid black;
+}
+
+.square:nth-child(3):hover {
+    flex-basis:90px;
+    margin:0 45px;
+    background:green;
+}
+
+.square:nth-child(4):hover {
+    border:8px red dashed;
+    transform: rotate(360deg);
+}
+
+.square:nth-child(5):hover {
+    border-radius:0;
+    color:transparent;
+    background:rgb(238,174,202);
+}
+
+.square:nth-child(6):hover {
+    background:rgba(124, 0, 124, 0.6);
+    border:3px solid black;
+    transform: rotate(180deg)
+}

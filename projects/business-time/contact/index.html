@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel='icon' href='../assets/img/favicon2.png' type='image/png' />
 </head>
 
 <body class="purpleGradBG">
@@ -22,19 +23,16 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="../#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="../portfolio/">Collabs</a>
                     </li>
                     <li>
-                        <a href="/portfolio/">Past Shows</a>
+                        <a href="../friends/">Friends</a>
                     </li>
                     <li>
-                        <a href="#">Friends</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="../contact/">Contact</a>
                     </li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger">
@@ -44,48 +42,50 @@
         </nav>
         <ul id="nav-mobile" class="sidenav">
             <li>
-                <a href="#">Home</a>
+                <a href="../#">Home</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="../portfolio/">Collabs</a>
             </li>
             <li>
-                <a href="/portfolio/">Past Shows</a>
+                <a href="../friends/">Friends</a>
             </li>
             <li>
-                <a href="#">Friends</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
+                <a href="../contact/">Contact</a>
             </li>
         </ul>
     </header>
+    <main>
+            <div class="section contactBody" style='display:flex;'>
+                <h1 class='white-text bebas'>Get in touch!</h1>
+                    <div class="card contact-wrapper" id='contact-form-wrapper'>
+                        <form action="https://formspree.io/contact@beaniebrigade.com" method="POST" target='hidden-form' id='contact-form' onsubmit="thankYou()">
+                            <div class="field">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" class='contact-inny' required>
+                            </div>
+            
+                            <div class="field">
+                                <label for="email">Email:</label>
+                                <input type="email" name="_replyto" class='contact-inny' required>
+                            </div>
+            
+                            <div class="field">
+                                <label for="message">Message:</label>
+                                <textarea name="message" class='materialize-textarea contact-inny' required></textarea>
+                            </div>
+            
+                            <button class="btn waves-effect waves-light purple" type="submit" id="subContactForm">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
 
-    <div class="section fullHeight" style='display:flex;'>
-        <div class="container">
-            <form id="ajax-contact" method="post" action="mailer.php">
-                <div class="field">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                        </form>
+                        <div id='thanks'>Thanks for your submission! We'll be in touch shortly.</div>
+                        <IFRAME style="display:none" name="hidden-form"></IFRAME>  
+                    </div>
+                    <p class='contactMeta'><a href="mailto:contact@beaniebrigade.com" class='white-text'>contact@beaniebrigade.com</a> | <a href="tel:5413577802" class='white-text'>541.357.7802</a></p>
                 </div>
-
-                <div class="field">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="field">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-
-                <div class="field">
-                    <button type="submit">Send</button>
-                </div>
-            </form>
-            <div id="form-messages"></div>
-        </div>
-    </div>
+    </main>
 
     <footer class="page-footer transparent">
         <div class="footer-copyright">
@@ -100,7 +100,13 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="../js/materialize.js"></script>
     <script src="../js/init.js"></script>
-
+    <script>
+        $('#thanks').fadeOut();
+        let thankYou = function() {
+            $("#thanks").css("font-size", "12px");
+            setTimeout(() => { $('#thanks').fadeIn(); }, 500);
+        }
+    </script>
 </body>
 
 </html>

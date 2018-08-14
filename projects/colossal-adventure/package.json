@@ -1,0 +1,19 @@
+{
+  "name": "colossal-adventure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "play-sound": "^1.1.2",
+    "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {
+    "xo": "^0.21.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
