@@ -261,7 +261,7 @@ const playGame = function (action) {
 				console.log('You cannot move any further right.\n');
 			}
 			break;
-		case 'print':
+		case 'i':
 			console.log(`Health: ${health}\nRemaining Covenant: ${enemiesLeft}`);
 			if (items.length > 0) {
         console.log(`Inventory: Health Kit (x${items.length})`)
@@ -302,12 +302,12 @@ console.clear();
 console.log(`\n\nIt’s the middle of the 26th century and mankind is being destroyed by a conglomerate of alien races known as The Covenant.\n\nA human spaceship is under attack with no chance to survive. The only hope for mankind is for ${player} - a Spartan know as Master Chief - to make sure the Covenant do not get a hold of the ship's AI and discover the location of Earth.\n\nThe survivors of the ship are stranded on a strange alien planet called Halo, and everything is stacked against them. It becomes a desperate battle as the brave crew, lead by the Master Chief and the AI Cortana, try to survive the Covenant's assault.\n\n\n`);
 console.log(`You wake up in a crashed escape pod. Your head is spinning, but the world quickly comes into view. Stepping out of the pod, you are greeted by an alien planet covered with the creatures that attacked you - The Covenant.`);
 console.log(`A message comes across your intercom. There is an escape from the planet in the form of a jijacked Covenant ship. To ensure mankind's safety, you must traverse to the other side of the small planet,
-eliminating all hostiles along the way.\n\nYou may use the following commands to play HALO:\n-> up\n-> down\n-> left\n-> right\n-> print\n\nChoose an action to begin.`);
+eliminating all hostiles along the way.\n\nYou can navigate the map using WADS or enter I to view your inventory.\n\nChoose an action to begin.`);
 
 // Keeps the game going if your health is above 0. Winning the game sets health to 0 and ends the loop.
 while (health > 0) {
-	const act = ask.keyIn('>', {limit: ['w', 's', 'a', 'd', 'i']});
-	playGame(act);
+	const act = ask.keyIn('>', {limit: ['w', 's', 'a', 'd', 'i', 'W', 'S', 'A', 'D', 'I']});
+	playGame(act.toLowerCase());
 }
 
 console.log('GAME OVER')
